@@ -7,18 +7,39 @@ body {
 	vertical-align: baseline;
 }
 
-.scaling-svg-container {
-	position: relative; 
-	height: 0; 
-	width: 100%; 
-	padding: 0;
-	padding-bottom: 100%; 
-	/* override this inline for aspect ratio other than square */
+/* ===========================
+ *         BACKGROUND
+ * ===========================
+*/
+.background {
+	/* z-index: -1; */
 }
-.scaling-svg {
-	position: absolute; 
-	height: 100%; 
-	width: 100%; 
-	left: 0; 
-	top: 0;
+
+.triangle-right--upper-left--orange {
+	width: 0;
+	height: 0;
+	border-top: 100px solid #ffad00;
+	border-right: 100px solid transparent;
 }
+
+.btn {
+    overflow:hidden;
+}
+.btn:after {
+    content: "";
+    position: absolute;
+    top:50px; left: 0;
+    background-color:inherit;
+    padding-bottom:50%; width:57.7%;
+    z-index:-1;
+    
+    -webkit-transform-origin:0 0;
+    -ms-transform-origin:0 0;
+    transform-origin:0 0;
+    
+    -webkit-transform: rotate(-30deg) skewX(30deg);;
+    -ms-transform: rotate(-30deg) skewX(30deg);
+    transform: rotate(-30deg) skewX(30deg);
+}
+/** FOR THE DEMO **/
+body{background: url('http://lorempixel.com/output/people-q-c-640-480-1.jpg');background-size:cover;}
