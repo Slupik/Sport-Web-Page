@@ -13,24 +13,62 @@ body {
 */
 .background {
 	z-index: -1;
-}
-
-.scaling-svg-container {
-	position: relative; 
-	height: 0; 
-	width: 100%; 
-	padding: 0;
-	/* padding-bottom: 100%;  */
-	/* override this inline for aspect ratio other than square */
-}
-.scaling-svg {
-	position: absolute; 
-	height: 100%; 
-	width: 100%; 
-	left: 0; 
-	top: 0;
-}
-.test {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: #222222;
     height: 100%;
     width: 100%;
+}
+
+.shape-group--upper-left {
+    width: 17%;
+    height: auto;
+    position: relative;
+}
+
+.triangular-right--upper-left--orange {
+    width: 100%;
+    height: auto;
+}
+
+.triangular-right--upper-left--yellow {
+    width: 28%;
+    height: auto;
+    position: absolute;
+    left: 20%;
+    top: 66%;
+}
+
+/* Unused TOD, only for future testing purposes */
+/* .shape-group--upper-right {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+} */
+
+.polygon--upper-right--yellow {
+    width: 13%;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.triangle--middle-right--orange {
+    width: 54.54%;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    top: 7.5%;
+}
+
+.triangle--bottom-left--yellow {
+    width: 2.69%;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 7.5%;
 }

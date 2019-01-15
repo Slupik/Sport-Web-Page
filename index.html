@@ -7,13 +7,35 @@
     </head>
     <body>
         <div class="background">
-
-        </div>
-        <!-- https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox -->
-        <div class="test">
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <polygon points="0,0 0,100 100,0 0,0" style="fill:lime;stroke:purple;stroke-width:1" />
-            </svg>
+            <!-- https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox -->
+            <div class="shape-group--upper-left">
+                <div class="triangular-right--upper-left--orange">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="0,0 0,100 100,0 0,0" style="fill:#ffad00;" />
+                    </svg>
+                </div>
+                <div class="triangular-right--upper-left--yellow">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="0,0 0,100 100,0 0,0" style="fill:#f8de01;" />
+                    </svg>
+                </div>
+            </div>
+            <div class="polygon--upper-right--yellow">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="43,0 100,0 100,100 47,100 0,46 43,0" style="fill:#f8de01;" />
+                    <!-- x,y -->
+                </svg>
+            </div>
+            <div class="triangle--middle-right--orange">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="100,0 100,100 55,50 100,0" style="fill:#ffad00;" />
+                </svg>
+            </div>
+            <div class="triangle--bottom-left--yellow">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="0,0 55,50 0,100 0,0" style="fill:#f8de01;" />
+                </svg>
+            </div>
         </div>
     </body>
 </html>
