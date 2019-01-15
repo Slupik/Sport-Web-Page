@@ -51,18 +51,18 @@ body {
 
 .polygon--upper-right--yellow {
     width: 13%;
-    height: auto;
+    height: 15vw;
     position: absolute;
     right: 0px;
     top: 0px;
 }
 
 .triangle--middle-right--orange {
-    width: 54.54%;
+    width: 70%;/*54.54%*/
     height: auto;
     position: absolute;
     right: 0px;
-    top: 5.3vw;
+    top: 5.333vw;
 }
 
 .triangle--bottom-left--yellow {
@@ -79,4 +79,12 @@ body {
     position: absolute;
     left: 0px;
     top: 61vw;
+}
+
+.big-polygon-pane--up {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    top: 74.4vw;
 }
