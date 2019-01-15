@@ -17,7 +17,7 @@ body {
     top: 0px;
     left: 0px;
     background-color: #222222;
-    height: 100%;
+    height: 87vw;
     width: 100%;
 }
 
@@ -62,13 +62,21 @@ body {
     height: auto;
     position: absolute;
     right: 0px;
-    top: 7.5%;
+    top: 5.3vw;
 }
 
 .triangle--bottom-left--yellow {
     width: 2.69%;
+    height: 6vw;
+    position: absolute;
+    left: 0px;
+    top: 55vw;
+}
+
+.triangle--bottom-left--orange {
+    width: 26%;
     height: auto;
     position: absolute;
     left: 0px;
-    top: 7.5%;
+    top: 61vw;
 }
