@@ -88,3 +88,35 @@ body {
     right: 0px;
     top: 74.4vw;
 }
+
+.big-polygon-pane--center {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 130vw;
+}
+
+.big-polygon-pane--down {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    top: 168vw;
+}
+
+.big-polygon-pane--very-down {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 210vw;
+}
+
+.big-polygon-pane--last-element {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    top: 233vw;
+}
