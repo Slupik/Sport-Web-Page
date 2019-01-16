@@ -20,6 +20,9 @@ body {
     height: 87vw;
     width: 100%;
 }
+.background > div {
+	z-index: -1;
+}
 
 .shape-group--upper-left {
     width: 17%;
@@ -39,15 +42,6 @@ body {
     left: 20%;
     top: 66%;
 }
-
-/* Unused TOD, only for future testing purposes */
-/* .shape-group--upper-right {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-} */
 
 .polygon--upper-right--yellow {
     width: 13%;
@@ -120,3 +114,111 @@ body {
     right: 0px;
     top: 233vw;
 }
+
+/* ===========================
+ *         FOREGROUND
+ * ===========================
+*/
+
+/*          BIKE          */
+
+.wheel {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+.bike {
+    position: absolute;
+    top: 7vw;
+    left: 46vw;
+}
+
+.bike__container {
+    position:relative;
+    width: 30vw;
+    max-width: 30vw;
+    line-height: 0;
+}
+
+.bike__container  img {
+    max-width: 100%;
+}
+
+.bike__cyclist {
+    width: 100%;
+    margin-left: 2%;
+}
+
+.bike__foot {
+    position: absolute;
+    width: 8.2%;
+    top: 68.78%;
+    left: 69.6%;
+}
+
+.bike__wheel--left {
+    width: 35%;
+    position: absolute;
+    top: 57%;
+}
+
+.bike__wheel--right {
+    width: 35%;
+    position: absolute;
+    top: 56%;
+    left: 64%;
+}
+
+.logo--small {
+    width: 6vw;
+    height: auto;
+    position: absolute;
+    top: 1vw;
+    left: 19vw;
+}
+
+/*          MENU          */
+
+.menu-up {
+    position: absolute;
+    right: 16vw;
+    top: 0.6vw;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 2vw 0px 2vw 0px;
+    padding: 0px 1vw 0px 1vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 1vw;
+}
+
+li a:hover {
+    background-color: rgba(17, 17, 17, 0.555);
+}
+
+.menu__item--divide {
+    border-left: solid #ffad00;;
+}
+
+/*          TILES          */
