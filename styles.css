@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "Museo_300";
+    src: url("resource/fonts/Museo300-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Museo_500";
+    src: url("resource/fonts/Museo 500.otf") format("opentype");
+}
+@font-face {
+    font-family: "Museo_700";
+    src: url("resource/fonts/Museo700-Regular.otf") format("opentype");
+}
+    
+
 body {
 	margin: 0;
 	padding: 0;
@@ -52,7 +66,7 @@ body {
 }
 
 .triangle--middle-right--orange {
-    width: 70%;/*54.54%*/
+    width: 70%;
     height: auto;
     position: absolute;
     right: 0px;
@@ -116,7 +130,29 @@ body {
 }
 
 /* ===========================
- *         FOREGROUND
+ *         UNIVERSAL
+ * ===========================
+*/
+
+.button {
+    background:transparent;
+    display:inline-block;
+    font-size:1.5vw;
+    padding:0.7vw 3vw;
+    text-decoration:none;
+
+    /* parallelogram */
+    transform: skew(-20deg);
+}
+
+.button span {
+    /* fix parallelogram */
+    display:inline-block;
+    transform: skew(20deg);
+}
+
+/* ===========================
+ *         CONTENT
  * ===========================
 */
 
@@ -173,12 +209,52 @@ body {
     left: 64%;
 }
 
+/*          OTHER UP          */
+
 .logo--small {
     width: 6vw;
     height: auto;
     position: absolute;
     top: 1vw;
     left: 19vw;
+}
+
+.slogan {
+    position: absolute;
+    top: 15vw;
+    left: 15%;
+    max-width: 30vw;
+}
+
+.slogan__title {
+    text-transform: uppercase;
+    font-family: 'Museo_700', sans-serif;
+    color: white;
+    font-size: 4vw;
+}
+
+.slogan__content {
+    text-transform: uppercase;
+    font-family: 'Museo_300', sans-serif;
+    color: white;
+    font-size: 0.8vw;
+    position: absolute;
+    top: 10vw;
+}
+
+.button--here {
+    border: 1px solid #f8de01;
+    margin-top: 3vw;
+    margin-left: 1vw;
+}
+
+.button--here:hover {
+    background: #573b00;
+}
+
+.button--here span {
+    color: #9cf801;
+    font-family: 'Museo_700', sans-serif;
 }
 
 /*          MENU          */
@@ -209,7 +285,7 @@ li a {
     padding: 0px 1vw 0px 1vw;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Museo_300', sans-serif;
     font-size: 1vw;
 }
 
