@@ -22,6 +22,56 @@ body {
 }
 
 /* ===========================
+ *         UNIVERSAL
+ * ===========================
+*/
+
+.button {
+    background:transparent;
+    display:inline-block;
+    font-size:1.5vw;
+    padding:0.7vw 3vw;
+    text-decoration:none;
+
+    /* parallelogram */
+    transform: skew(-20deg);
+}
+
+.button span {
+    /* fix parallelogram */
+    display:inline-block;
+    transform: skew(20deg);
+}
+
+
+.center { 
+    position: relative;
+}
+.center > div {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center--hor { 
+    position: relative;
+}
+.center--hor > div {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.center--block {
+  position: absolute;
+  top: 0; bottom:0; left: 0; right:0;
+  margin: auto;
+}
+
+/* ===========================
  *         BACKGROUND
  * ===========================
 */
@@ -130,28 +180,6 @@ body {
 }
 
 /* ===========================
- *         UNIVERSAL
- * ===========================
-*/
-
-.button {
-    background:transparent;
-    display:inline-block;
-    font-size:1.5vw;
-    padding:0.7vw 3vw;
-    text-decoration:none;
-
-    /* parallelogram */
-    transform: skew(-20deg);
-}
-
-.button span {
-    /* fix parallelogram */
-    display:inline-block;
-    transform: skew(20deg);
-}
-
-/* ===========================
  *         CONTENT
  * ===========================
 */
@@ -169,8 +197,8 @@ body {
 
 .bike {
     position: absolute;
-    top: 7vw;
-    left: 46vw;
+    top: 9vw;
+    left: 43vw;
 }
 
 .bike__container {
@@ -219,10 +247,12 @@ body {
     left: 19vw;
 }
 
+
+
 .slogan {
     position: absolute;
-    top: 15vw;
-    left: 15%;
+    top: 11vw;
+    left: 11%;
     max-width: 30vw;
 }
 
@@ -242,6 +272,8 @@ body {
     top: 10vw;
 }
 
+
+
 .button--here {
     border: 1px solid #f8de01;
     margin-top: 3vw;
@@ -255,6 +287,72 @@ body {
 .button--here span {
     color: #9cf801;
     font-family: 'Museo_700', sans-serif;
+}
+
+/*          OFFERS          */
+
+/* container */
+
+.offers {
+    position: absolute;
+    top: 43vw;
+    width: 100%;
+}
+.offers__container {
+    width: 68vw;
+}
+
+/* switch */
+
+.offer-switch {
+    width: 100%;
+}
+.button--offer-switch {
+    display:inline-block;
+    margin-left: 1vw;
+
+    transform: skew(-30deg);
+    width: 0.5vw;
+    height: 0.5vw;
+}
+.button--offer-switch--not-selected {
+    background: #ffad00;
+    border: 1px solid #ffad00;
+}
+.button--offer-switch--selected {
+    background: white;
+    border: 1px solid #9cf801;
+}
+
+/* tiles */
+
+.offers-wrapper {
+    margin-top: 6vw;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.offer__tiles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-width: 33vw;
+    min-height: 17vw;
+    max-width: 100%;
+    max-height: 100%;
+    background: white;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+    .offers-wrapper {
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: 1fr;
+      grid-gap: 2em;
+    }
 }
 
 /*          MENU          */
