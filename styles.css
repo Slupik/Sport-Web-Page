@@ -10,6 +10,45 @@
     font-family: "Museo_700";
     src: url("resource/fonts/Museo700-Regular.otf") format("opentype");
 }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('resource/fonts/icomoon.eot?cky4sy');
+    src:  url('resource/fonts/icomoon.eot?cky4sy#iefix') format('embedded-opentype'),
+      url('resource/fonts/icomoon.ttf?cky4sy') format('truetype'),
+      url('resource/fonts/icomoon.woff?cky4sy') format('woff'),
+      url('resource/fonts/icomoon.svg?cky4sy#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-play:before {
+    content: "\e900";
+}
     
 
 body {
@@ -76,7 +115,7 @@ body {
  * ===========================
 */
 .background {
-	z-index: -1;
+	z-index: -10;
     position: relative;
     top: 0px;
     left: 0px;
@@ -85,7 +124,7 @@ body {
     width: 100%;
 }
 .background > div {
-	z-index: -1;
+	z-index: -10;
 }
 
 .shape-group--upper-left {
@@ -222,12 +261,14 @@ body {
     width: 8.2%;
     top: 68.78%;
     left: 69.6%;
+    z-index: -2;
 }
 
 .bike__wheel--left {
     width: 35%;
     position: absolute;
     top: 57%;
+    z-index: -1;
 }
 
 .bike__wheel--right {
@@ -235,6 +276,7 @@ body {
     position: absolute;
     top: 56%;
     left: 64%;
+    z-index: -1;
 }
 
 /*          OTHER UP          */
@@ -343,8 +385,16 @@ body {
     min-height: 17vw;
     max-width: 100%;
     max-height: 100%;
-    background: white;
+    background: black;
     display: inline-block;
+    position: relative;
+}
+
+.offer__tiles > img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    max-height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -353,6 +403,122 @@ body {
       grid-template-columns: 1fr;
       grid-gap: 2em;
     }
+}
+
+.tiles--fit-man__shape {
+    width: 55%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.tiles--fit-couple__shape {
+    width: 55%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.tiles--fit_woman__shape {
+    width: 101.5%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.tiles--dressed-man__shape {
+    width: 101.5%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.tiles__title--light {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    max-width: 50%;
+
+    text-transform: uppercase;
+    font-family: 'Museo_700', sans-serif;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.tiles__content--light {
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    max-width: 40%;
+
+    text-transform: uppercase;
+    font-family: 'Museo_300', sans-serif;
+    color: white;
+    font-size: 0.7vw;
+}
+
+.tiles__more--light {
+    position: absolute;
+    bottom: 0%;
+    left: 7%;
+    text-align: center;
+}
+
+.tiles__more--light > p {
+    font-family: 'Museo_300', sans-serif;
+    color: #f8de01;
+    font-size: 1.3vw;
+    display: inline-block;
+}
+
+.tiles__more--light > span {
+    color: #f8de01;
+    font-size: 1vw;
+    display: inline-block;
+}
+
+.tiles__title--dark {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    max-width: 50%;
+
+    text-transform: uppercase;
+    font-family: 'Museo_700', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.5vw;
+}
+
+.tiles__content--dark {
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    max-width: 40%;
+
+    text-transform: uppercase;
+    font-family: 'Museo_300', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 0.7vw;
+}
+
+.tiles__more--dark {
+    position: absolute;
+    bottom: 0%;
+    left: 7%;
+    text-align: center;
+}
+
+.tiles__more--dark > p {
+    font-family: 'Museo_700', sans-serif;
+    color: black;
+    font-size: 1.3vw;
+    display: inline-block;
+}
+
+.tiles__more--dark > span {
+    color: black;
+    font-size: 1vw;
+    display: inline-block;
 }
 
 /*          MENU          */
