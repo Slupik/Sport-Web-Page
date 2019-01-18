@@ -265,9 +265,8 @@ body {
     position: absolute;
     right: 16vw;
     top: 0.6vw;
-}
 
-ul {
+    /* <ul> */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -275,11 +274,11 @@ ul {
     background-color: transparent;
 }
 
-li {
+.menu-up li {
     float: left;
 }
 
-li a {
+.menu-up li a {
     display: block;
     color: white;
     text-align: center;
@@ -291,7 +290,7 @@ li a {
     font-size: 1vw;
 }
 
-li a:hover {
+.menu-up li a:hover {
     background-color: rgba(17, 17, 17, 0.555);
 }
 
@@ -796,6 +795,8 @@ li a:hover {
     position: relative;
 }
 
+/* info */
+
 .newsletter__info {
     margin-left: 15.5%;
 }
@@ -868,4 +869,89 @@ li a:hover {
 }
 .button--sumbit:hover {
     background: #573b00;
+}
+
+/*          BOTTOM MENU          */
+
+.bottom-menu {
+    width: 100%;
+    position: absolute;
+    top: 247vw;
+}
+.newsletter > div {
+    position: relative;
+}
+
+/* logo */
+.bottom-menu__logo {
+    margin-left: 15%;
+}
+
+.bottom-menu__logo > img {
+    width: 12.5vw;
+}
+
+.bottom-menu__logo > span {
+    display: block;
+    font-family: 'Museo_300', sans-serif;
+    color: lightgray;
+    font-size: 0.7vw;
+    max-width: 20vw;
+    margin-top: 1.5vw;
+    margin-left: 0.5vw;
+}
+
+/* menu */
+
+.bottom-menu__menu {
+    position: absolute;
+    top: 0%;
+    margin-left: 41%;
+}
+
+.bottom-menu__menu__wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: left;
+    justify-items: left;
+    width: 43vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .products-wrapper {
+        grid-gap: 2vw;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+.bottom-menu__menu__category {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.bottom-menu__menu__category li:first-of-type {
+    text-transform: none;
+    display: block;
+    font-family: 'Museo_300', sans-serif;
+    color: white;
+    font-size: 0.7vw;
+    margin-bottom: 1.5vw;
+}
+.bottom-menu__menu__category li:first-of-type::first-letter {
+    text-transform: uppercase;
+}
+
+.bottom-menu__menu__category li {
+    text-transform: capitalize;
+    font-family: 'Museo_300', sans-serif;
+    color: gray;
+    font-size: 0.7vw;
+    margin-bottom: 0.6vw;
 }
