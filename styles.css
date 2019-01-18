@@ -254,6 +254,29 @@ body {
     top: 233vw;
 }
 
+.copyright-footer {
+    position: absolute;
+    width: 100%;
+    top: 264vw;
+    background-color: #111111;
+    text-align: center;
+}
+
+.copyright-footer > div {
+    padding: 15px;
+}
+
+.copyright-footer a {
+    color: white;
+    font-family: 'Museo_300', sans-serif;
+    font-size: 0.7vw;
+}
+
+.copyright-footer [href] {
+    color: #f8de01;
+    text-decoration: none;
+}
+
 /* ===========================
  *         CONTENT
  * ===========================
