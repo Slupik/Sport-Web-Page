@@ -75,11 +75,29 @@ body {
     /* parallelogram */
     transform: skew(-30deg);
 }
-
 .button span {
     /* fix parallelogram */
     display:inline-block;
     transform: skew(30deg);
+}
+
+
+.input-field {
+    display:inline-block;
+    margin: 0 0 0 20px;
+    padding: 0 3px 0 3px;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+}
+.input-field input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -o-transform: skew(30deg);
 }
 
 
@@ -93,6 +111,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 .center--hor { 
     position: relative;
@@ -764,4 +783,89 @@ li a:hover {
     color: black;
     font-size: 0.7vw;
     max-width: 90%;
+}
+
+/*          NEWSLETTER          */
+
+.newsletter {
+    width: 100%;
+    position: absolute;
+    top: 225vw;
+}
+.newsletter > div {
+    position: relative;
+}
+
+.newsletter__info {
+    margin-left: 15.5%;
+}
+
+.newsletter__info > h1 {
+    font-family: 'Museo_700', sans-serif;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.newsletter__info__discount {
+    font-family: 'Museo_700', sans-serif;
+    color: #f8de01;
+    font-size: 2vw;
+}
+
+/* form */
+
+.newsletter__form {
+    position: absolute;
+    right: 20%;
+    top: 1vw;
+    width: 36vw;
+
+    display: flex;
+    justify-content: flex-end
+}
+.newsletter__field {
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 1px 0px 1px 1px;
+    width: 25vw;
+    
+    display: inline-block;
+}
+.newsletter__field > input {
+    background-color: transparent;
+    color: white;
+    height: 2.5vw;
+    font-size: 1vw;
+}
+.newsletter__field > input::placeholder {
+    text-transform: capitalize;
+    color: #a7a7a7;
+    opacity: 1;
+}
+.newsletter__field > input:-ms-input-placeholder {
+    text-transform: capitalize;
+    color: #a7a7a7;
+}
+.newsletter__field > input::-ms-input-placeholder {
+    text-transform: capitalize;
+    color: #a7a7a7;
+}
+
+/* button */
+
+.button--sumbit {
+    display: inline-block;
+    width: 5vw;
+    text-align: center;
+    
+    border: 1px solid #f8de01;
+    padding: 0.7vw 1vw;
+}
+.button--sumbit span {
+    color: #f8de01;
+    font-family: 'Museo_300', sans-serif;
+    font-size: 0.9vw;
+}
+.button--sumbit:hover {
+    background: #573b00;
 }
