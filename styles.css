@@ -669,6 +669,25 @@ li a:hover {
     max-height: 80%;
 }
 
+/*          PERFORMANCE BUTTONS          */
+
+.button--know {
+    border: 1px solid #000000;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    padding: 0.7vw 2vw;
+}
+
+.button--know:hover {
+    background: #bbbbbb;
+}
+
+.button--know span {
+    color: #000000;
+    font-family: 'Museo_300', sans-serif;
+    font-size: 0.9vw;
+}
+
 /*          PERFORMANCE UP          */
 
 .performance--up {
@@ -707,19 +726,42 @@ li a:hover {
     max-width: 50%;
 }
 
-.button--know {
-    border: 1px solid #000000;
-    margin-top: 2vw;
-    margin-left: 1vw;
-    padding: 0.7vw 2vw;
+/*          PERFORMANCE UP          */
+
+.performance--down {
+    width: 100%;
+    position: absolute;
+    top: 171.5vw;
+}
+.performance--down > div {
+    position: relative;
 }
 
-.button--know:hover {
-    background: #bbbbbb;
+.performance--down__image {
+    position: absolute;
+    left: 15%;
+    width: 32%;
 }
 
-.button--know span {
-    color: #000000;
+.performance--down__info {
+    position: absolute;
+    top: 10vw;
+    right: 15%;
+    width: 32%;
+    max-width: 32%;
+}
+
+.performance--down__info > h1 {
+    text-transform: uppercase;
+    font-family: 'Museo_700', sans-serif;
+    color: white;
+    font-size: 2.43vw;
+    max-width: 67%;
+}
+
+.performance--down__info > p {
     font-family: 'Museo_300', sans-serif;
-    font-size: 0.9vw;
+    color: black;
+    font-size: 0.7vw;
+    max-width: 90%;
 }
