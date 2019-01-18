@@ -459,6 +459,9 @@ body {
     background: #ffad00;
     border: 1px solid #ffad00;
 }
+.button--offer-switch--not-selected:hover {
+    border: 1px solid #9cf801;
+}
 .button--offer-switch--selected {
     background: white;
     border: 1px solid #9cf801;
@@ -560,6 +563,12 @@ body {
     bottom: 0%;
     left: 7%;
     text-align: center;
+
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.tiles__more--light:hover {
+    transform: scale(1.1);
 }
 
 .tiles__more--light > p {
@@ -604,6 +613,12 @@ body {
     bottom: 0%;
     left: 7%;
     text-align: center;
+
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.tiles__more--dark:hover {
+    transform: scale(1.1);
 }
 
 .tiles__more--dark > p {
@@ -673,6 +688,14 @@ body {
     overflow: hidden;
 
     background-color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.product:hover > div {
+    background: white;
+}
+.product:hover {
+    transform: scale(1.1);
 }
 
 .product > div {
@@ -719,8 +742,12 @@ body {
     padding: 0.7vw 2vw;
 }
 
-.button--know:hover {
-    background: #bbbbbb;
+.button--know--up:hover {
+    background: #e7e7e7;
+}
+
+.button--know--down:hover {
+    background: #f8de01;
 }
 
 .button--know span {
@@ -966,6 +993,8 @@ body {
     color: white;
     font-size: 0.7vw;
     margin-bottom: 1.5vw;
+
+    cursor: default;
 }
 .bottom-menu__menu__category li:first-of-type::first-letter {
     text-transform: uppercase;
@@ -977,4 +1006,9 @@ body {
     color: gray;
     font-size: 0.7vw;
     margin-bottom: 0.6vw;
+
+    cursor: pointer;
+}
+.bottom-menu__menu__category li:hover {
+    color: white;
 }
