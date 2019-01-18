@@ -73,13 +73,13 @@ body {
     text-decoration:none;
 
     /* parallelogram */
-    transform: skew(-20deg);
+    transform: skew(-30deg);
 }
 
 .button span {
     /* fix parallelogram */
     display:inline-block;
-    transform: skew(20deg);
+    transform: skew(30deg);
 }
 
 
@@ -669,5 +669,57 @@ li a:hover {
     max-height: 80%;
 }
 
-/*          WEIGHTLIFTING          */
+/*          PERFORMANCE UP          */
 
+.performance--up {
+    width: 100%;
+    position: absolute;
+    top: 131.5vw;
+}
+.performance--up > div {
+    position: relative;
+}
+
+.performance--up__image {
+    position: absolute;
+    right: 17%;
+    width: 52%;
+}
+
+.performance--up__info {
+    position: absolute;
+    top: 10vw;
+    left: 15%;
+}
+
+.performance--up__info > h1 {
+    text-transform: uppercase;
+    font-family: 'Museo_700', sans-serif;
+    color: black;
+    font-size: 2.43vw;
+    max-width: 37%;
+}
+
+.performance--up__info > p {
+    font-family: 'Museo_300', sans-serif;
+    color: black;
+    font-size: 0.7vw;
+    max-width: 50%;
+}
+
+.button--know {
+    border: 1px solid #000000;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    padding: 0.7vw 2vw;
+}
+
+.button--know:hover {
+    background: #bbbbbb;
+}
+
+.button--know span {
+    color: #000000;
+    font-family: 'Museo_300', sans-serif;
+    font-size: 0.9vw;
+}
