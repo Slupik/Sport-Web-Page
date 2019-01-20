@@ -264,6 +264,7 @@ body {
     width: 6vw;
     height: auto;
     position: absolute;
+    cursor: pointer;
     top: 1vw;
     left: 19vw;
     transform: translate(0%, 25%);
