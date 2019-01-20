@@ -469,15 +469,48 @@ body {
 }
 
 
+.button-animation:link:after, .button-animation:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+.button-animation:link:hover:after, .button-animation:visited:hover:after {
+	height: 350%;
+}
+.button-animation:link, .button-animation:visited {
+	overflow: hidden;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.button-animation:after {
+	background: #D24D57;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
 
 .button--here {
     border: 1px solid #f8de01;
     margin-top: 3vw;
     margin-left: 1vw;
 }
-
-.button--here:hover {
+.button--here:after {
     background: #573b00;
+}
+.button--here:link:hover:after, .button-animation:visited:hover:after {
+	height: 300%;
 }
 
 .button--here span {
@@ -1213,14 +1246,6 @@ body {
     padding: 0.7vw 2vw;
 }
 
-.button--know--up:hover {
-    background: #e7e7e7;
-}
-
-.button--know--down:hover {
-    background: #f8de01;
-}
-
 .button--know span {
     color: #000000;
     font-family: 'Museo_300', sans-serif;
@@ -1280,6 +1305,13 @@ body {
     color: black;
     font-size: 0.7vw;
     max-width: 50%;
+}
+
+.button--know--up:after {
+    background: #e7e7e7;
+}
+.button--know--up:link:hover:after, .button-animation:visited:hover:after {
+	height: 300%;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -1387,6 +1419,13 @@ body {
     color: black;
     font-size: 0.7vw;
     max-width: 90%;
+}
+
+.button--know--down:after {
+    background: #f8de01;
+}
+.button--know--down:link:hover:after, .button-animation:visited:hover:after {
+	height: 300%;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -1571,8 +1610,12 @@ body {
     font-family: 'Museo_300', sans-serif;
     font-size: 0.9vw;
 }
-.button--sumbit:hover {
+
+.button--sumbit:after {
     background: #573b00;
+}
+.button--sumbit:link:hover:after, .button-animation:visited:hover:after {
+	height: 300%;
 }
 
 @media only screen and (max-width: 1280px) {
