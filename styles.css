@@ -48,6 +48,11 @@
 }
 .icon-play:before {
     content: "\e900";
+    /* &#xe900; */
+}
+.icon-menu:before {
+    content: "\e9bd";
+    /* &#xe9bd; */
 }
 
 body {
